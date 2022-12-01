@@ -7,8 +7,6 @@ The internet is decentralized, which means that no one owns the internet or cont
 
 Web is not the whole internet but the most popular application of the internet. Other applications include Email and BitTorrent.
 
-Uses TCP/IP protocol.
-
 #### 3 Parts:
 * Last Mile - The part which connects home and small businesses to the internet. Connections provided by cable TV companies, new fibre optic connections or the old DSL service providers over telephone cable. Also includes towers for mobile data.
 * Data Centers - Large rooms full of servers which host apps and content. Usually owned and operated by large corporations such as Google and Meta. Usually build in remote locations. Very fast internet connections allowing them to serve multiple users simultaneously.
@@ -57,8 +55,18 @@ The DNS is the reason why we can access Vox by typing vox.com instead of a hard 
 DNS is managed by ICANN which is a non-profit. 
 
 2 types of domain names:
-* gTLDs (generic top-level domains) - .com, .org, .edu etc.
-* ccTLDs (country-code top-level domains) - .in, .uk, .io, .us
+* gTLDs (generic top-level domains) - .com, .org, .edu etc. - Managed by private organizations
+* ccTLDs (country-code top-level domains) - .in, .uk, .io, .us - Managed by organizations within the country
+
+### Video on How The Internet Works - https://www.youtube.com/watch?v=x3c1ih2NJEg&ab_channel=Lesics
+Process:
+* You type the domain name in browser (client) since IP addresses are hard to remember
+* Browser asks the DNS server to give the IP address (phone book type service)
+* The browser uses the IP address to contact the server
+* The server sends data in packets which may travel via different routes
+* Packets travel over fibre optic cables over vast distances to reach your router (Wifi or Ethernet) or a cell tower where these are assembled based on their sequence number
+* The light signals are converted to electromagnetic waves or electronic signals by the cell tower or the router and sent to your device
+* If a packet is lost, it is the responsibility of the client to ask for it again from the server
 
 ### What is a Server? - https://www.techtarget.com/whatis/definition/server
 A program that "serves" requests in the literal sense of the word. Physical server is a system running an OS and a program to serve requests. But it is more common and advantageous to run multiple virtual servers which are utilising common hardware. A virtual server is independent of other servers using the same hardware and has its own OS and applications. The IP address and full qualified domain name are supplied at the OS level.
